@@ -17,29 +17,43 @@ body {
     font-family: "public sans", sans-serif;
     font-size: 1.2rem;
     min-height: 100%;
+    
 
      
 }
 
 .grid_container > * {
     box-shadow: -1px 1px 7px 0px rgb(0,0,0,0.75);
-border-radius: 4px;
+border-radius: 10px;
 padding: 10px;
+;
 text-align: center;
+
+
+
 
 }
 
 .header {
     grid-area: header;
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
+    place-self: strech;
+   
+    
+    place-items: center ;
+    
 }
 .navbar {
     grid-area: navbar;
-    background-color: rgb(171, 241, 57);
+    
+    background-color: rgb(248, 248, 248);
 }
 .main {
     grid-area: main;
     background-color: rgb(62, 230, 20);
+  place-items: center ;
+  align-content: ;
+    
 }
 .sidebar {
     grid-area: sidebar;
@@ -51,15 +65,19 @@ text-align: center;
 }
 
 .grid_container{
+    background-color: black;
     display: grid;
-    gap: 10px;
-    grid-template-areas:
-    "header"
-    "navbar"
-    "main"
-    "sidebar"
-    "footer" ;
+    gap: 5px;  
+    
+    grid-template:
+    "header" 60px
+    "navbar"50px
+    "sidebar"auto
+    "main" auto
+    "footer" 100px
+
 }
+
 
 @media (min-width: 600px){
     .grid_container {
@@ -86,30 +104,31 @@ text-align: center;
 #LOGOCENTRAL {
     text-size-adjust: 0%;
  background-color: rgb(129, 5, 5);
- font-size: 40px;
+ font-size: 50px;
  
      color: rgb(170, 28, 28);
      text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
      border: none;
+     
+
     
-   margin-top: 0px;
-   margin-left: 0px;
   
-
-
-    
-    
-    
-   
-   
- 
- 
 
  animation-name: radialGradient ;
  animation-iteration-count: infinite ;
  animation-duration: 5s;
 }
-
+.btn {
+    color: rgba(255, 253, 253, 0.75);
+    background-color: rgb(0, 0, 0)
+}
+        #registro01 {
+        
+        animation-name: gardiente ;
+        animation-iteration-count:infinite ;
+        animation-duration: 2s;
+   
+    }
             
 /**************************************************/
 /*            Animaciones                         */
