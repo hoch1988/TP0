@@ -26,12 +26,12 @@
 <body class="grid_container">
     <header class="header">
         <div class="container-fluid">
-            <li id="LOGOCENTRAL" class="fas fa-play-circle fixed-top  " aria-hidden="true">NOOOOTFLIX
+            <li id="LOGOCENTRAL"  class="fas fa-play-circle fixed-top  " aria-hidden="true">NOOOOTFLIX
             </li>
 
         </div>
     </header>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+    <nav class="navbar navbar-expand- bg-dark navbar-dark ">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,25 +44,23 @@
                     <a ; class="nav-link active" aria-current="page" href="../pages/inicio.html"><i class="fas fa-home"
                             aria-hidden="true"></i></a>
                 </li>
+                
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Catalogo
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                </div>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
                         <li><a class="dropdown-item" href="../pages/catalogo.html#section1">>Peliculas</a>
                         </li>
                         <li><a class="dropdown-item" href="../pages/catalogo.html#section2">>Series</a></li>
                         <li><a class="dropdown-item" href="../pages/catalogo.html#section3">>Documentales</a>
                         </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
+                       
                         <li>
                             <form class="d-flex">
                                 <input class="form-control me-2" type="text"
-                                    placeholder="Encuetra lo ques estas buscando">
+                                    placeholder="que estas buscando??">
                                 <button class="btn btn-primary" type="button"><i class="fas fa-search"
                                         aria-hidden="true"></i></button>
                             </form>
@@ -82,7 +80,7 @@
 
     <aside class="sidebar">
         
-    <div class="container-fluid mt-3">
+    <div class="container-fluid mt-2">
         <div class="offcanvas offcanvas-start" id="demo">
             <div class="offcanvas-header">
                 <h1 class="offcanvas-title"> INICIO SESION</h1>
@@ -91,6 +89,7 @@
             </div>
          
             <div class="offcanvas-body">
+                
                 <form class="inicio" action="../tpobligatorio/pages/inicio.html" method="POST" target="__blank">
     
                     <label for="fname"></label>
@@ -126,70 +125,78 @@
     <Article class="main">
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- Indicators/dots -->
+            <!-- Indicators/dots 
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-            </div>
+            </div>-->
 
             <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    </a>
+            <div id="demo" class="carousel slide"  data-interval="1000" data-bs-ride="carousel">
+        </div>
+        <br><br><br>
+        <div class="container-fluid mt-3">
+            <h3><i class="fa fa-film "></i> Estrenos de la semana</h3>
+        <p>Inicia sesion y disfruta de todo el catalogo</p>
+        
+        </div>
+        <br>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                </a>
 
-                    <div class="container mt-3">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#myModal01">
-                            <img src="../assets/images/venom.jpg" class="rounded-circle" width="150" height="300"
-                                alt="VENOM" class="d-block" style="width:100%">
-                        </button>
-                    </div>
+                <div class="container mt-3">
+                    <div class="btn btn-img" data-bs-toggle="modal" data-bs-target="#myModal01">
+                        <img src="/assets/images/venom.jpg" class="rounded-circle" width="150"
+                            height="300" alt="VENOM" class="d-block" style="width:100%">
+                        </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="container mt-3">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#myModal02">
-                            <img src="../assets/images/vhs.jpg" class="rounded-circle" width="150" height="300"
-                                alt="VHS" class="d-block" style="width:100%">
-                        </button>
-                    </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container mt-3">
+                    <div type="button" class="btn btn-img" data-bs-toggle="modal" data-bs-target="#myModal02">
+                        <img src="/assets/images/vhs.jpg" class="rounded-circle" width="150"
+                            height="300" alt="VHS" class="d-block" style="width:100%">
+                        </div>
                 </div>
+            </div>
 
-                <div class="carousel-item">
-                    <div class="container mt-3">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#myModal03">
-                            <img src="../assets/images/alguien.jpg" class="rounded-circle" width="150" height="300"
-                                alt="alguien" class="d-block" style="width:100%">
+            <div class="carousel-item">
+                <div class="container mt-3">
+                    <button type="button" class="btn btn-img" data-bs-toggle="modal" data-bs-target="#myModal03">
+                        <img src="/assets/images/alguien.jpg" class="rounded-circle" width="150"
+                            height="300" alt="alguien" class="d-block" style="width:100%">
 
-                        </button>
-
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
 
+                </div>
 
             </div>
-            <br><br><br>
-            <div class="container-fluid mt-3">
-                <h3>Estrenos de la semana</h3>
-                <p>Inicia sesion y disfruta de todo el catalogo</p>
+
+        </div>
+
+    </div>
+
+
             
-            </div>
     </Article>
-    <Footer class="footer"> Hochman Copyright 2021</Footer>
+    <Footer class="footer"> <footer>
+        <div>
+          <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="http://www.facebook.com" target="_blank" rel="fab facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://wa.me/1164025652" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+        <p>Copyright®  Hochman Copyright 2021</p>
+      
+    </Footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="../js/app.js"></script>
-
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="../js/app.js"></script>
 
 </body>
 
