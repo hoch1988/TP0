@@ -15,7 +15,7 @@ html{
 
 body {
     font-family: "public sans", sans-serif;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     min-height: 100%;
     background-color: rgb(99, 3, 3);
     
@@ -28,7 +28,7 @@ body {
 border-radius: 10px;
 padding: 10px;
 text-align: center;
-color: rgb(0, 0, 0);
+color: rgb(2, 2, 2);
 
 }
 
@@ -73,6 +73,8 @@ color: rgb(0, 0, 0);
 .footer {
     grid-area: footer;
     background-color: rgb(99, 3, 3);
+    font-size: 1.5rem;
+    display:sticky
 }
 
 .grid_container{
@@ -82,8 +84,8 @@ color: rgb(0, 0, 0);
     
     grid-template:
     "header" 50px
-    "navbar"60px
-    "sidebar"100px
+    "sidebar"90px
+    "navbar"65px
     "main" auto
     "footer" 100px
 
@@ -121,6 +123,15 @@ h3 {color: white;}
     align-items: stretch;
 } 
 
+
+.container-fluid * {
+    color: rgb(0, 0, 0);
+}
+
+
+#catalogo {
+      position: static;
+}
 /**************************************************/
 /*            mediaquery                       */
 /**************************************************/
@@ -131,18 +142,27 @@ h3 {color: white;}
      grid-template: 
         "header     header" 50px
         "navbar     sidebar " 150px
-        "main    main"  auto
+        "main       main"  auto
         "footer     footer" 100px /
         300px       auto;    
 }
+}
+
+#idsection1  {
+    align-items: center;
+   
+    
 
 }
+
+
 
 @media (min-width: 900px){
     .grid_container {
      grid-template: 
         "header header header" 50px
-        "navbar main sidebar" auto
+        "navbar main main" 500px
+        "sidebar main main" auto
         "footer footer footer" 100px /
         250px   auto    250px ;
 
@@ -215,4 +235,9 @@ h3 {color: white;}
 }
 }
 
+}
+
+
+.h1 {
+    color: blue;
 }
