@@ -130,7 +130,10 @@ h3 {color: white;}
 
 
 #catalogo {
-      position: static;
+      position: block;
+      border-radius: 10px;
+      align-items: stretch;
+      color:black
 }
 /**************************************************/
 /*            mediaquery                       */
@@ -235,9 +238,6 @@ h3 {color: white;}
 }
 }
 
-}
 
 
-.h1 {
-    color: blue;
-}
+
