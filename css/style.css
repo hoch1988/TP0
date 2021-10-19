@@ -17,6 +17,7 @@ body {
     font-family: "public sans", sans-serif;
     font-size: 1.2rem;
     min-height: 100%;
+    background-color: rgb(99, 3, 3);
     
 
      
@@ -28,6 +29,8 @@ border-radius: 10px;
 padding: 10px;
 ;
 text-align: center;
+color: rgb(0, 0, 0);
+
 
 
 
@@ -38,30 +41,29 @@ text-align: center;
     grid-area: header;
     background-color: rgb(0, 0, 0);
     place-self: strech;
-   
-    
+    background-color: rgb(99, 3, 3);  
     place-items: center ;
     
 }
 .navbar {
     grid-area: navbar;
+    background-color: rgb(99, 3, 3);
     
-    background-color: rgb(248, 248, 248);
 }
 .main {
     grid-area: main;
-    background-color: rgb(62, 230, 20);
-  place-items: center ;
-  align-content: ;
-    
+    place-items: center ;
+    background-color: rgba(37, 37, 37, 0.692);
+ color: white
+ 
 }
 .sidebar {
     grid-area: sidebar;
-    background-color: rgb(255, 81, 0);
+    background-color: rgb(99, 3, 3);
 }
 .footer {
     grid-area: footer;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(99, 3, 3);
 }
 
 .grid_container{
@@ -70,7 +72,7 @@ text-align: center;
     gap: 5px;  
     
     grid-template:
-    "header" 60px
+    "header" 50px
     "navbar"50px
     "sidebar"auto
     "main" auto
@@ -78,24 +80,43 @@ text-align: center;
 
 }
 
+#navbarDropdown{
+    background-color: black;
+color: white;
+}
+
+.dropdown-menu {
+    background-color: white;
+    
+}
+
+.navbar-nav {
+    gap: 5px;
+    background-color: rgba(37, 37, 37, 0.9);
+}
+
+/**************************************************/
+/*            mediaquery                       */
+/**************************************************/
+
 
 @media (min-width: 600px){
     .grid_container {
      grid-template: 
-        "header     header" 100px
-        "sidebar    navbar " 50px
-        "sidebar    main"  auto
+        "header     header" 50px
+        "navbar     sidebar " 70px
+        "navbar    main"  auto
         "footer     footer" 100px /
-        200px       auto;    
+        250px       auto;    
 }
 }
 
 @media (min-width: 900px){
     .grid_container {
      grid-template: 
-        "header header header" 100px
+        "header header header" 50px
         "navbar main sidebar" auto
-        "footer footer footer" 100px /
+        "footer footer footer" 50px /
         200px   auto 200px ;
 
 }
@@ -103,7 +124,7 @@ text-align: center;
 
 #LOGOCENTRAL {
     text-size-adjust: 0%;
- background-color: rgb(129, 5, 5);
+    background-color: rgb(99, 3, 3);
  font-size: 50px;
  
      color: rgb(170, 28, 28);
