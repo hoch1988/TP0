@@ -48,6 +48,8 @@ color: rgb(0, 0, 0);
 .navbar {
     grid-area: navbar;
     background-color: rgb(99, 3, 3);
+    align-self: auto;
+    
     
 }
 .main {
@@ -93,7 +95,17 @@ color: white;
 .navbar-nav {
     gap: 5px;
     background-color: rgba(37, 37, 37, 0.9);
+    display: block
 }
+
+.navbar-toggler  {
+    display: block;
+} 
+
+.navbar-toggler * {
+    display: block;
+    align-content: flex-end;
+} 
 
 /**************************************************/
 /*            mediaquery                       */
@@ -109,6 +121,9 @@ color: white;
         "footer     footer" 100px /
         250px       auto;    
 }
+.nav {
+    display: ;
+}  
 }
 
 @media (min-width: 900px){
