@@ -30,7 +30,9 @@
 
         </div>
     </header>
-    <nav class="navbar navbar-expand- bg-dark navbar-dark ">
+
+    <nav  class="navbar navbar-toggler bg-dark navbar-dark ">
+        
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,56 +74,25 @@
             </ul>
 
         </div>
-
+        <i class="far fa-user"></i>
+        <h3>Bienvenido <br>.....</h3>
 
         </div>
     </nav>
 
     <aside class="sidebar">
         
-    <div class="container-fluid mt-2">
-        <div class="offcanvas offcanvas-start" id="demo">
-            <div class="offcanvas-header">
-                <h1 class="offcanvas-title"> INICIO SESION</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-    
-            </div>
-         
-            <div class="offcanvas-body">
-                
-                <form class="inicio" action="../tpobligatorio/pages/inicio.html" method="POST" target="__blank">
-    
-                    <label for="fname"></label>
-                    <input type="text" id="fnameID" name="fname" placeholder="Nombre de usuario" required maxlength="8">
-                    <br>
-                    <br>
-    
-                    <label for="password"> </label>
-                    <input type="password" id="fnameID" color="black" id="passwordID" name="password"
-                        placeholder="Contraseña" required>
-                    <br>
-                    <br>
-    
-                    <button class="btn btn-secondary" type="submit">Ingresar</button>
-                    <br>
-                    <br>
-    
-    
-                    <a class="btn btn-secondary" id="registro01" href="pages/signup.html">Crear cuenta</a>
-                </form>
-            </div>
-    
+        <div class="container-fluid mt-3">
+            <h3><i class="fa fa-film "></i> Estrenos de la semana</h3>
+        <p>Inicia sesion y disfruta de todo el catalogo</p>
+        
         </div>
-        <h3></h3>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"
-            data-bs-toggle="tooltip" title="A disfrutar!">
-            INICIAR SESION
-        </button>
 
-    </div>
+   
         
     </aside>
     <Article class="main">
+
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
  
            
@@ -130,11 +101,7 @@
         </div>
         
         <br><br><br>
-        <div class="container-fluid mt-3">
-            <h3><i class="fa fa-film "></i> Estrenos de la semana</h3>
-        <p>Inicia sesion y disfruta de todo el catalogo</p>
-        
-        </div>
+       
         <br>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -170,18 +137,13 @@
             </div>
 
         </div>
-        <!-- Indicators/dots -->
- <div class="carousel-indicators" >
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-</div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-</button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
         <br><br>
 
     </div>

@@ -27,15 +27,13 @@ body {
     box-shadow: -1px 1px 7px 0px rgb(0,0,0,0.75);
 border-radius: 10px;
 padding: 10px;
-;
 text-align: center;
 color: rgb(0, 0, 0);
 
-
-
-
-
 }
+
+
+
 
 .header {
     grid-area: header;
@@ -45,23 +43,32 @@ color: rgb(0, 0, 0);
     place-items: center ;
     
 }
-.navbar {
+.nav {
     grid-area: navbar;
     background-color: rgb(99, 3, 3);
-    align-self: auto;
+    
+    
     
     
 }
 .main {
     grid-area: main;
     place-items: center ;
-    background-color: rgba(37, 37, 37, 0.692);
- color: white
+    
+    color: white;
+    background-image: url("../assets/images/pantalla.jpg");
+    
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+    
  
 }
 .sidebar {
     grid-area: sidebar;
     background-color: rgb(99, 3, 3);
+    color:white
 }
 .footer {
     grid-area: footer;
@@ -75,36 +82,43 @@ color: rgb(0, 0, 0);
     
     grid-template:
     "header" 50px
-    "navbar"50px
-    "sidebar"auto
+    "navbar"60px
+    "sidebar"100px
     "main" auto
     "footer" 100px
 
 }
-
+.fab {
+    color:white
+}
 #navbarDropdown{
-    background-color: black;
+    
 color: white;
 }
 
 .dropdown-menu {
-    background-color: white;
+    background-color:rgba(37, 37, 37, 0.9);
+    text-align: center;
+    color: white;
     
 }
-
+.fa-user {
+    size: 10rem;
+    color: white;
+}
 .navbar-nav {
     gap: 5px;
     background-color: rgba(37, 37, 37, 0.9);
-    display: block
-}
-
-.navbar-toggler  {
-    display: block;
+    
 } 
+h3 {color: white;}
+
+
 
 .navbar-toggler * {
     display: block;
-    align-content: flex-end;
+    top: 0px;
+    align-items: stretch;
 } 
 
 /**************************************************/
@@ -116,14 +130,12 @@ color: white;
     .grid_container {
      grid-template: 
         "header     header" 50px
-        "navbar     sidebar " 70px
-        "navbar    main"  auto
+        "navbar     sidebar " 150px
+        "main    main"  auto
         "footer     footer" 100px /
-        250px       auto;    
+        300px       auto;    
 }
-.nav {
-    display: ;
-}  
+
 }
 
 @media (min-width: 900px){
@@ -131,10 +143,11 @@ color: white;
      grid-template: 
         "header header header" 50px
         "navbar main sidebar" auto
-        "footer footer footer" 50px /
-        200px   auto 200px ;
+        "footer footer footer" 100px /
+        250px   auto    250px ;
 
 }
+
 }
 
 #LOGOCENTRAL {
