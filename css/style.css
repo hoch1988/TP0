@@ -2,12 +2,97 @@
 );
 
 *{
+    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     
 
 }
+body {
+    background-color: #282c34;
+    font-family: sans-serif;
+    font-size: 3rem;
+  }
+  
+  .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #000000;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+  
+    background-size: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-size: 100%;
+    
+  }
+  
+  .grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+  
+  @media (min-width: 600px) {
+    .footer {
+        grid-area: footer;
+        background-color: rgb(99, 3, 3);
+        background: linear-gradient(0deg, rgb(92, 3, 3) 50%, rgba(0,0,0,0.75) 100%);
+        font-size: 1.2rem;
+        position: block;
+        bottom: 0% ;
+    }
+    .grid-container {
+        display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+    grid-auto-rows: minmax(200px, auto);
+    padding: 40px;
+    }
+
+
+    
+  }
+  @media (min-width: 900px) {
+    .footer {
+        grid-area: footer;
+        background-color: rgb(99, 3, 3);
+        background: linear-gradient(0deg, rgb(92, 3, 3) 50%, rgba(0,0,0,0.75) 100%);
+        font-size: 1.2rem;
+        position: block;
+        bottom: 0% ;
+    }
+    .grid-container {
+        
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: minmax(150px, auto);
+    }
+    .wide {
+      grid-column: span 4;
+    }
+  
+    .tall {
+      grid-row: span 2;
+    }
+    
+    
+  }
+
+
+
+
 
 html{
     height: 100%;
@@ -43,6 +128,7 @@ color: rgb(2, 2, 2);
     background-color: rgb(99, 3, 3);  
     place-items: center ;
     
+    
 }
 .nav {
     grid-area: navbar;
@@ -66,18 +152,18 @@ color: rgb(2, 2, 2);
     
  
 }
-.sidebar * {
+.sidebar {
     grid-area: sidebar;
-    background-color: black;
+    background-color: rgb(99, 3, 3);
     color:rgb(255, 255, 255);
     font-size: 1.3rem;
-    position: sticky;
-    gap: 5px
+   
 }
 .footer {
     grid-area: footer;
     background-color: rgb(99, 3, 3);
-    font-size: 1.5rem;
+    background: linear-gradient(0deg, rgb(92, 3, 3) 50%, rgba(0,0,0,0.75) 100%);
+    font-size: 1.2rem;
     position: sticky;
     bottom: 0% ;
     
@@ -92,10 +178,10 @@ color: rgb(2, 2, 2);
     
     grid-template:
     "header" 50px
-    "sidebar"90px
+    "sidebar"100px
     "navbar"65px
     "main" auto
-    "footer" 100px
+    "footer" 80px
 
 }
 .fab {
@@ -159,6 +245,22 @@ h3 {color: white;}
   background-position: center;
   background-size: 100%;
 }
+.col-md-6{
+    color: rgb(253, 253, 253);
+}
+
+#birthdayID{
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 253, 253);
+}
+
+.form-check-label{
+    color: rgb(253, 253, 253);
+}
+.form {
+    position:
+}
+
 
 
 /**************************************************/
@@ -193,7 +295,7 @@ h3 {color: white;}
         "navbar main main" 500px
         "sidebar main main" auto
         "footer footer footer" 100px /
-        250px   auto    250px ;
+        250px   auto    0px ;
 
 }
 
