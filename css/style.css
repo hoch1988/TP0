@@ -132,10 +132,9 @@ color: rgb(2, 2, 2);
     background-color: rgb(99, 3, 3);
     padding-top: 0px
 
-    
-    
-    
+  
 }
+
 .main {
     grid-area: main;
     place-items: center ;
@@ -223,7 +222,7 @@ h3 {color: white;}
 
 #catalogo {
      
-      border-radius: 10px;
+      border-radius: 5px;
       align-items: stretch;
       color:black
       
