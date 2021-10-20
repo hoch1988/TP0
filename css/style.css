@@ -130,7 +130,8 @@ color: rgb(2, 2, 2);
 .nav {
     grid-area: navbar;
     background-color: rgb(99, 3, 3);
-    
+    padding-top: 0px
+
     
     
     
@@ -153,7 +154,7 @@ color: rgb(2, 2, 2);
     grid-area: sidebar;
     background-color: rgb(99, 3, 3);
     color:rgb(255, 255, 255);
-    font-size: 1.3rem;
+    font-size: 1rem;
    
 }
 .footer {
