@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 
 }
 
@@ -65,16 +66,23 @@ color: rgb(2, 2, 2);
     
  
 }
-.sidebar {
+.sidebar * {
     grid-area: sidebar;
-    background-color: rgb(99, 3, 3);
-    color:white
+    background-color: black;
+    color:rgb(255, 255, 255);
+    font-size: 1.3rem;
+    position: sticky;
+    gap: 5px
 }
 .footer {
     grid-area: footer;
     background-color: rgb(99, 3, 3);
     font-size: 1.5rem;
-    display:sticky
+    position: sticky;
+    bottom: 0% ;
+    
+    
+    
 }
 
 .grid_container{
@@ -125,16 +133,34 @@ h3 {color: white;}
 
 
 .container-fluid * {
-    color: rgb(0, 0, 0);
+    color: rgb(47, 55, 172);
 }
 
 
 #catalogo {
-      position: block;
+     
       border-radius: 10px;
       align-items: stretch;
       color:black
+      
 }
+
+
+.offcanvas-header {
+    background-color:rgba(37, 37, 37, 0.9);
+    color: white;
+
+}
+.offcanvas-body {
+    background-color:rgba(37, 37, 37, 0.9);
+    background-image: url("../assets/images/movie_bg8_top.jpg");
+       
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+
 /**************************************************/
 /*            mediaquery                       */
 /**************************************************/
